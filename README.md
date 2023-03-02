@@ -5,7 +5,7 @@ The Azure IoT Edge Node-RED Module is a module that can be deployed to Azure IoT
 
 ## How to deploy the module
 
-The module is available as an AMD64, ARM64 and ARM32 module. To run the module, deploy an [IoT Edge on Linux](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux) or [Raspberry Pi](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux-arm), and then deploy the respective module (AMD64, ARM64v8 or ARM32V7). Version 1.0.2 of the Node-Red Edge modules now use the offical Node-red docker containers, version 1.1.3-12.
+The module is available as an AMD64, ARM64 and ARM32 module. To run the module, deploy an [IoT Edge on Linux](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux) or [Raspberry Pi](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux-arm), and then deploy the respective module (AMD64, ARM64v8 or ARM32V7). Version 1.0.2 of the Node-Red Edge modules now use the official Node-red docker containers, version 1.1.3-12.
 
 - In the Azure portal, navigate to your IoT hub.
 - Go to **IoT Edge** and select your IoT Edge device.
@@ -115,7 +115,7 @@ The Node-RED module contains a number of custom nodes placed in the group "Azure
 - Access the Node-RED module using a browser on the same network as the IoT Edge device: http://&#x3C;edge-device-ip&#x3E;:1880
 - Open the example as a starter, containing all custom nodes: ```Import > Examples > azure iot-edge > example```
 - Deploy the example and see the output either in the debug window of Node-RED or using device explorer on windows for the output messages send to IoT Hub.
-  > **NB:** The example assumes you've deployed the tempSensor and related route as mentoined above. The provided deployment templates deploy a setup specifically for the Node-RED example. If you deploy by hand and see no messages coming into the Node-RED module input, check whether you've named the modules and the end-points the same and used them correctly in the route.*
+  > **NB:** The example assumes you've deployed the tempSensor and related route as mentioned above. The provided deployment templates deploy a setup specifically for the Node-RED example. If you deploy by hand and see no messages coming into the Node-RED module input, check whether you've named the modules and the end-points the same and used them correctly in the route.*
 - If you want to deploy more output, input or method nodes you can drag these onto the Node-RED design service and connect them to the Module Client using the existing one as the Nodule Client configuration node in the node settings.
 - You can deploy any other Node-RED node if needed and interact with them, but remember you are running in a container and communication with serial ports, etc. might require additional setup of the container host (Moby).
 - My assumption is you know how to work with Node-RED, but if you don't you can find Node-RED's documentation here: [https://nodered.org/docs/user-guide/]
