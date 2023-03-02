@@ -19,7 +19,7 @@ npm install -g node-red-contrib-azure-iot-edge-module
 1. Open the palette manager in Node-RED
 1. Click the **Install** tab
 1. Search for **node-red-contrib-azure-iot-edge-module**
-1. Clcik the **Install** button next to the node
+1. Click the **Install** button next to the node
 
 ## Add the installation of the node to a docker container build
 Create a docker build file using the desired node container as the base container and add the following statements:
